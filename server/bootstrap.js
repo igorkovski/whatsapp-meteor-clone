@@ -20,7 +20,7 @@ Meteor.startup(function () {
 				timestamp: moment().subtract(4, 'days').toDate()
 			},
 			{
-				text: 's is wicked awesome fluff!',
+				text: 'This is wicked awesome fluff!',
 				timestamp: moment().subtract(2, 'weeks').toDate()
 			},
 		];
