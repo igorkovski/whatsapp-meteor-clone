@@ -1,8 +1,9 @@
 angular
-	.module('Whatsapp',
-	['angular-meteor',
+	.module('Whatsapp',[
+	 'angular-meteor',
 	 'ionic',
-	 'angularMoment']);
+	 'angularMoment'
+]);
 
 if (Meteor.isCordova) {
 	angular.element(document).on('deviceready', onReady);
