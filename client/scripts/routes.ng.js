@@ -1,17 +1,20 @@
-angular.module('Whatsapp').config(config);
+angular
+	.module('Whatsapp')
+	.config(config);
 
 function config($stateProvider, $urlRouterProvider) {
 	$stateProvider
-	.state('tab', {
-		url: '/tab',
-		abstract: true,
-		templateUrl: 'client/templates/tabs.ng.html'
+		.state('tab', {
+			url: '/tab',
+			abstract: true,
+			templateUrl: 'client/templates/tabs.ng.html'
 	})
 	.state('tab.chats', {
 		url: '/chats',
-		views: 
-		{ 'tab-chats': {
-		templateUrl: '/client/tamplates/chats.ng.html'
+		views: { 
+			'tab-chats': {
+		templateUrl: 'client/tamplates/chats.ng.html',
+		controller: 'ChatsCtrl'
 		}
 	}
 	});

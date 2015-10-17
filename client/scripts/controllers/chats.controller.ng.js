@@ -19,12 +19,12 @@ function ChatsCtrl($scope) {
 			picture: 'https://randomuser.me/api/portraits/thumb/lego/1.jpg',
 			lastMessage: {
 				text: 'Hey, it\'s me',
-				timestamp: moment().bustract(2, 'hours').toDate()
+				timestamp: moment().subtract(2, 'hours').toDate()
 			}
 		},
 		{
 			_id: 2,
-			name: 'Avery Stweart',
+			name: 'Avery Stew',
 			picture: 'https://randomuser.me/api/portraits/thumb/women/1.jpg',
 			lastMessage: {
 				text: 'I should buy a boat',
@@ -34,7 +34,7 @@ function ChatsCtrl($scope) {
 		{
 			_id: 3,
 			name: 'Katie Peterson',
-			picture: picture: 'https://randomuser.me/api/portraits/thumb/women/2.jpg',
+			picture: 'https://randomuser.me/api/portraits/thumb/women/2.jpg',
 			lastMessage: {
 				text: 'Bro, are you coming or what?',
 				timestamp: moment().subtract(4, 'days').toDate()
