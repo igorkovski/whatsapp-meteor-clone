@@ -1,14 +1,14 @@
 angular
-	.module('Whatsapp')
-	.controller('ChatsCtrl', ChatsCtrl);
+  .module('Whatsapp')
+  .controller('ChatsCtrl', ChatsCtrl);
 
-function ChatsCtrl($scope) {
-	$scope.chats = $scope.$meteorCollection(Chats, false);
-	$scope.remove = remove;
+function ChatsCtrl ($scope) {
+  $scope.chats = $scope.$meteorCollection(Chats, false);
+  $scope.remove = remove;
 
- /////////////////
+  ////////////
 
- function remove (chat) {
- 	$scope.chats.remove(chat);
- }
+  function remove (chat) {
+    $scope.chats.remove(chat);
+  }
 }
